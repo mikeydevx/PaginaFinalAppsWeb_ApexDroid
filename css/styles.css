@@ -1,0 +1,32 @@
+/*
+  Estilos globales del sitio.
+  Acuerden aquí tipografía, colores, espaciados y estilos compartidos.
+  Cada integrante debe evitar redefinir selectores globales sin avisar.
+*/
+
+:root {
+  /* TODO: agregar variables de color y tipografía del diseño. */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+}
