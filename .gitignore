@@ -1,12 +1,7 @@
-# Archivos temporales del sistema operativo
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# Dependencias instaladas localmente, si se agregan en el futuro
 node_modules/
-
-# Archivos temporales del editor
 *.swp
 *.swo
 *~

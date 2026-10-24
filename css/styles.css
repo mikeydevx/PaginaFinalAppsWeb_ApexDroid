@@ -1,13 +1,3 @@
-/*
-  Estilos globales del sitio.
-  Acuerden aquí tipografía, colores, espaciados y estilos compartidos.
-  Cada integrante debe evitar redefinir selectores globales sin avisar.
-*/
-
-:root {
-  /* TODO: agregar variables de color y tipografía del diseño. */
-}
-
 * {
   box-sizing: border-box;
 }
