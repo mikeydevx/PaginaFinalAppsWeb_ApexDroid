@@ -47,7 +47,7 @@ body {
 }
 
 .ventana {
-  background-color: var(--color-blanco);
+  background: var(--color-blanco);
   color: var(--color-texto-oscuro);
   border-radius: 20px;
   padding: 20px;
