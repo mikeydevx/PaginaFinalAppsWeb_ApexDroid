@@ -8,12 +8,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/principal.css">
-  <link rel="stylesheet" href="css/producto.css">
-  <link rel="stylesheet" href="css/carrito.css">
-  <link rel="stylesheet" href="css/direccion.css">
-  <link rel="stylesheet" href="css/metodo-pago.css">
-  <link rel="stylesheet" href="css/favoritos.css">
-  <link rel="stylesheet" href="css/cuenta.css">
 </head>
 <body class="pagina-principal">
 
@@ -121,13 +115,71 @@
       </div>
     </section>
 
+    <section id="productos" class="container my-4 d-lg-flex gap-4 align-items-start">
+
     <nav id="categorias">
+      <div class="titulo-filtro">FILTROS</div>
+
+      <!--Aqui vamos a agrear los filtros-->
+
+      <!--Marca-->  
+
+      <select class="btn-filtro" id="filtro-marca">
+        <option value="todos">Marca: todas</option>
+        <option value="asus">ASUS</option>
+        <option value="lenovo">LENOVO</option>
+        <option value="nvidia">NVIDIA</option>
+        <option value="corsair">CORSAIR</option>
+      </select>
+
+      <!--PRECIO-->
+
+      <select class="btn-filtro" id="filtro-precio">
+        <option value="todos">PRECIO: TODOS</option>
+        <option value="bajo">Menos de $5,000</option>
+        <option value="medio">$5,000 - $15,000</option>
+        <option value="alto">Más de $15,000</option>
+      </select>
+
+
+      <!--Oferta-->
+
+      <select class="btn-filtro" id="filtro-oferta">
+        <option value="">TODOS LOS PRODUCTOS</option>
+        <option value="">CON DESCUENTO</option>
+      </select>
+
+      <button type="button" class="btn-filtro">LIMPIAR FILTROS</button>
     </nav>
 
     <!-- Sección de productos -->
-    <section id="productos" class="container my-4">
+    
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
+            <div class="card-body">
+              <h5 class="card-title">Laptop Gamer</h5>
+              <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
+              <p class="fs-4 fw-bold">$15,999 MXN</p>
+              <button type="button" class="btn btn-danger">Ver producto</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
+            <div class="card-body">
+              <h5 class="card-title">Laptop Gamer</h5>
+              <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
+              <p class="fs-4 fw-bold">$15,999 MXN</p>
+              <button type="button" class="btn btn-danger">Ver producto</button>
+            </div>
+          </div>
+        </div>
 
         <div class="col">
           <div class="card h-100">
@@ -218,7 +270,7 @@
             <div class="text-end">
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-            <iframe id="marco" src="" width="100%" height="500"></iframe>
+            <iframe id="marco" src="" width="100%" height="560"></iframe>
           </div>
         </div>
       </div>
@@ -231,11 +283,5 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/producto.js"></script>
-  <script src="js/carrito.js"></script>
-  <script src="js/direccion.js"></script>
-  <script src="js/metodo-pago.js"></script>
-  <script src="js/favoritos.js"></script>
-  <script src="js/cuenta.js"></script>
 </body>
 </html>
