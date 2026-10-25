@@ -1,1 +1,1 @@
-"use strict";
+// Funciones de favoritos
