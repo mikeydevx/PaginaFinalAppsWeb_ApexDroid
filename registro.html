@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro | ApexDroid</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/registro.css">
   <script src="js/registro.js" defer></script>
 </head>
+
 <body class="pagina-registro">
-  <header class="encabezado">
-  </header>
+  <div class="card">
+    <h2>REGISTRARSE</h2>
 
-  <main id="contenido">
-    <section id="registro">
-    </section>
-  </main>
+    <form>
+      <div class="formulario-grupo">
+        <label>Nombre de usuario</label>
+        <input type="text" placeholder="Usuario" required>
+      </div>
 
-  <footer class="pie-pagina">
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <div class="formulario-grupo">
+        <label>Correo electronico</label>
+        <input type="email" placeholder="Email" required>
+      </div>
+
+      <div class="formulario-grupo">
+        <label>Contraseña</label>
+        <input type="password" placeholder="••••••••••••" required>
+      </div>
+
+      <p class="login-texto">
+        ¿Tienes cuenta? <a href="inicio-sesion.html">Iniciar sesión</a>
+      </p>
+
+      <button type="button" class="btn-google"><img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google">Continuar con Google</button>
+
+      <button type="submit" class="btn-submit">Registrar</button>
+    </form>
+  </div>
 </body>
+
 </html>
