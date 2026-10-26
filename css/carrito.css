@@ -1,2 +1,42 @@
 .ventana-carrito {
+    padding: 20px;
 }
+
+.ventana-carrito .ventana-encabezado{
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ventana-carrito #contenido-carrito{
+    padding: 15px;
+}
+
+.ventana-carrito .lista.productos p{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-height: 120px;
+}
+
+.ventana-carrito #lista-productos{
+    margin: 0;
+    text-align: center;
+}
+
+.ventana-carrito .resumen-carrito{
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.ventana-carrito .resumen-carrito h4{
+    margin-bottom: 20px;
+}
+
+.ventana-carrito .btn-danger{
+    padding: 12px;
+    border-radius: 8px;
+}
+

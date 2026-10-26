@@ -1,2 +1,79 @@
+
 .ventana-metodo-pago {
+    padding: 20px;
+    background-color: var(--color-blanco);
+    color: var(--color-texto-oscuro);
+}
+
+.ventana-metodo-pago .ventana-encabezado {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ventana-metodo-pago .ventana-contenido {
+    padding: 15px;
+}
+
+.ventana-metodo-pago h4 {
+    margin-bottom: 15px;
+}
+
+.ventana-metodo-pago .opcion-pago {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.ventana-metodo-pago .opcion-pago label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.ventana-metodo-pago .opcion-pago i {
+    margin-right: 10px;
+    font-size: 22px;
+    color: var(--color-rojo);
+}
+
+.ventana-metodo-pago .form-check-input:checked {
+    background-color: var(--color-rojo);
+    border-color: var(--color-rojo);
+}
+
+.ventana-metodo-pago .resumen-pago {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: var(--color-fondo-panel);
+    border-radius: 10px;
+}
+
+.ventana-metodo-pago .ventana-pie {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.ventana-metodo-pago .btn-danger {
+    background-color: var(--color-rojo);
+    border-color: var(--color-rojo);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.ventana-metodo-pago .btn-danger:hover {
+    background-color: var(--color-rojo-hover);
+}
+
+@media (max-width: 480px) {
+    .ventana-metodo-pago {
+        padding: 10px;
+    }
+
+    .ventana-metodo-pago .ventana-contenido {
+        padding: 5px;
+    }
 }
