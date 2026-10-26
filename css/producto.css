@@ -1,2 +1,77 @@
-.ventana-producto {
+.etiqueta-marca{
+  background-color: var(--color-rojo);
+    color: var(--color-texto-blanco);
+  font-weight: bold;
+  font-size: 20px;
+    padding: 5px 18px;
+  display: inline-block;
+}
+
+
+.img-principal {
+    width: 80%;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.miniatura{
+  width: 55px;
+    height: 55px;
+  object-fit: contain;
+    border: 1px solid var(--color-borde-gris);
+  padding: 4px;
+}
+
+.btn-icono {
+  background-color: var(--color-blanco);
+    color: var(--color-azul);
+  border: 1px solid var(--color-azul);
+    border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+
+.precio-anterior{
+    text-decoration: line-through;
+  color: var(--color-texto-gris);
+  font-size: 14px;
+}
+
+.precio-oferta {
+  color: var(--color-precio-oferta);
+}
+
+.pagos-mes{
+    color: var(--color-precio-oferta);
+  font-size: 12px;
+}
+
+.lista-especificaciones p {
+  margin-bottom: 3px;
+    font-size: 13px;
+  color: var(--color-texto-oscuro);
+}
+
+
+.caja-compra{
+    border: 1px solid var(--color-borde-gris);
+  border-radius: 15px;
+    padding: 15px;
+  font-size: 13px;
+}
+
+.texto-entrega {
+  color: var(--color-entrega);
+    font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.btn-agregar{
+    background-color: var(--color-azul-claro);
+  color: var(--color-azul);
+    border: none;
+  border-radius: 8px;
+  padding: 8px;
+    font-weight: bold;
 }

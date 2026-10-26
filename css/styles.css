@@ -1,54 +1,83 @@
-:root {
+:root{
   --color-fondo-azul: #0c1829;
   --color-fondo-negro: #000;
+    --color-footer: #1c1c1c;
   --color-blanco: #fff;
   --color-gris-claro: #e5e5e5;
 
+
   --color-rojo: #b30000;
-  --color-rojo-hover: #8a0000;
+    --color-rojo-hover: #8a0000;
   --color-rojo-brillo: #ff0000;
 
   --color-azul: #2563eb;
   --color-azul-hover: #1d4ed8;
-  --color-azul-neon: #001aff;
+    --color-azul-neon: #001aff;
   --color-azul-marino: #000b5c;
+
 
   --color-texto-blanco: #fff;
   --color-texto-oscuro: #111;
-  --color-texto-gris: #666;
+    --color-texto-gris: #666;
   --color-borde-gris: #ccc;
 
   --color-azul-claro: #dbe7fb;
   --color-precio-oferta: #f97300;
-  --color-entrega: #008a3e;
+    --color-entrega: #008a3e;
   --color-fondo-panel: #f0f0f0;
   --color-texto-gris-claro: #b8b8b8;
 
   --fuente-principal: system-ui, -apple-system, sans-serif;
+
 }
+
 
 body {
   margin: 0;
-  min-height: 100vh;
+    min-height: 100vh; /*Hace que el fondo ocupe toda la altura de la ventana*/
   background: linear-gradient(
     180deg,
     var(--color-fondo-azul),
     var(--color-fondo-negro)
   );
   color: var(--color-texto-blanco);
-  font-family: var(--fuente-principal);
+    font-family: var(--fuente-principal);
 }
 
-/* Encabezado superior */
-.encabezado {
+
+/*Encabezado superior*/
+.encabezado{
   background-color: var(--color-fondo-negro);
-  border-bottom: 3px solid var(--color-rojo-brillo);
+    border-bottom: 3px solid var(--color-rojo-brillo);
   box-shadow: 0 5px 18px rgba(255, 0, 0, 0.5);
 }
 
 .ventana {
-  background: var(--color-blanco);
+    background: var(--color-blanco);
   color: var(--color-texto-oscuro);
   border-radius: 20px;
-  padding: 20px;
+    padding: 20px;
+}
+
+
+.pie-pagina{
+  background-color: var(--color-footer);
+    border-top: 2px solid var(--color-rojo-brillo);
+}
+
+.pie-pagina a i {
+    color: var(--color-texto-blanco);
+  transition: 0.3s;
+}
+
+.pie-pagina .bi-facebook:hover{
+  color: #1877f2;
+}
+
+.pie-pagina .bi-instagram:hover {
+    color: #e1306c;
+}
+
+.pie-pagina .bi-youtube:hover{
+  color: #ff0000;
 }

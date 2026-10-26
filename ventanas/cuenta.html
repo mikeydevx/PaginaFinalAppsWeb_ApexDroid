@@ -1,22 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/cuenta.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
   <title>Mi cuenta</title>
   <dialog id="ventana-cuenta" class="ventana ventana-cuenta" aria-labelledby="titulo-cuenta"></dialog>
 </head>
+
 <body>
-  
-  <header class="ventana-encabezado">
-    <h2 id="titulo-cuenta">Cuenta</h2>
-  </header>
+  <div class="contenedor">
+
+
+    <div class="columna-izquierda">
+      <div class="avatar">
+        <div class="persona"><i class="bi bi-person"></i></div>
+        <div class="camara"><i class="bi bi-camera"></i></div>
+      </div>
+
+      <div class="usuario-nombre">Usuario</div>
+      <div class="usuario-email">correo123@gmail.com</div>
+
+      <div class="seccion-titulo">Información personal</div>
+
+      <form style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+        <div class="formulario-grupo">
+          <label>Nombre</label>
+          <input type="text" value="Usuario">
+        </div>
+
+        <div class="formulario-grupo">
+          <label>Correo Electrónico</label>
+          <input type="email" value="correo123@gmail.com">
+        </div>
+
+        <div class="formulario-grupo">
+          <label>Teléfono</label>
+          <input type="text" value="+XXX XXX XXXX">
+        </div>
+
+        <button type="button" class="btn-guardar">Guardar cambios</button>
+      </form>
+    </div>
+
+
+    <div class="dividora"></div>
+
+    <div class="columna-derecha">
+
+      <div class="card-opcion">
+        <div class="opcion-izquierda">
+          <span class="icono"><i class="bi bi-basket2-fill"></i></span>
+          <div class="option-info">
+            <h4>Mis pedidos</h4>
+            <p>Consulta el estado de tus compras</p>
+          </div>
+        </div>
+        <span class="flecha"><i class="bi bi-chevron-right"></i></span>
+      </div>
+
+      <div class="card-opcion">
+        <div class="opcion-izquierda">
+          <span class="icono"><i class="bi bi-mailbox-flag"></i></span>
+          <div class="option-info">
+            <h4>Direcciones</h4>
+            <p>Administra las direcciones de envío</p>
+          </div>
+        </div>
+        <span class="flecha"><i class="bi bi-chevron-right"></i></span>
+      </div>
+
+      <div class="card-opcion">
+        <div class="opcion-izquierda">
+          <span class="icono"><i class="bi bi-credit-card"></i></span>
+          <div class="option-info">
+            <h4>Métodos de pago</h4>
+            <p>Gestiona tus tarjetas y medios de pago</p>
+          </div>
+        </div>
+        <span class="flecha"><i class="bi bi-chevron-right"></i></span>
+      </div>
+
+      <div class="card-opcion">
+        <div class="opcion-izquierda">
+          <span class="icono"><i class="bi bi-nut"></i></span>
+          <div class="option-info">
+            <h4>Configuración</h4>
+            <p>Preferencias de la cuenta</p>
+          </div>
+        </div>
+        <span class="flecha"><i class="bi bi-chevron-right"></i></span>
+      </div>
+
+      <div class="card-opcion">
+        <div class="opcion-izquierda">
+          <span class="icono"><i class="bi bi-box-arrow-left"></i></span>
+          <div class="option-info">
+            <h4>Cerrar sesión</h4>
+            <p>Finaliza tu sesión de forma segura</p>
+          </div>
+        </div>
+        <span class="flecha"><i class="bi bi-chevron-right"></i></span>
+      </div>
+
+    </div>
+  </div>
 
   <div id="contenido-cuenta" class="ventana-contenido">
   </div>
 
   <footer class="ventana-pie">
   </footer>
-</dialog>
+  </dialog>
 </body>
+
 </html>

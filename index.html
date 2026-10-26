@@ -2,54 +2,48 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productos | ApexDroid</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/principal.css">
-  <link rel="stylesheet" href="css/producto.css">
-  <link rel="stylesheet" href="css/carrito.css">
-  <link rel="stylesheet" href="css/direccion.css">
-  <link rel="stylesheet" href="css/metodo-pago.css">
-  <link rel="stylesheet" href="css/favoritos.css">
-  <link rel="stylesheet" href="css/cuenta.css">
 </head>
 <body class="pagina-principal">
 
-  <!-- Encabezado y menú -->
   <header class="encabezado sticky-top">
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
 
         <a class="navbar-brand" href="index.html">
-          <img src="assets/img/logo.png" alt="ApexDroid" width="220">
+            <img src="assets/img/logo.png" alt="ApexDroid" width="220">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <div class="collapse navbar-collapse" id="menuPrincipal">
 
           <div class="navbar-nav">
-            <button type="button" class="nav-link">COMPUTADORAS</button>
+              <button type="button" class="nav-link">COMPUTADORAS</button>
             <button type="button" class="nav-link">CELULARES</button>
-            <button type="button" class="nav-link">AUDÍFONOS</button>
+              <button type="button" class="nav-link">AUDÍFONOS</button>
             <button type="button" class="nav-link">OTROS</button>
           </div>
 
           <form class="d-flex ms-lg-auto my-3 my-lg-0" id="formulario-busqueda">
-            <div class="input-group flex-nowrap border border-2 border-light rounded-pill">
+              <div class="input-group flex-nowrap border border-2 border-light rounded-pill">
               <input class="form-control bg-transparent text-white border-0 rounded-start-pill"
                      type="search"
                      id="buscar-producto"
                      placeholder="¿Qué necesitas buscar?">
-              <button class="btn btn-outline-light border-0 rounded-end-pill" type="submit">
+                <button class="btn btn-outline-light border-0 rounded-end-pill" type="submit">
                 <i class="bi bi-search"></i>
               </button>
             </div>
           </form>
+
 
           <div class="d-flex align-items-center gap-2 ms-xl-3">
 
@@ -59,10 +53,10 @@
                     data-bs-toggle="modal"
                     data-bs-target="#miVentana"
                     onclick="abrir('ventanas/favoritos.html')">
-              <i class="bi bi-heart-fill"></i>
+                <i class="bi bi-heart-fill"></i>
             </button>
 
-            <button class="btn btn-outline-light border-0 fs-4"
+              <button class="btn btn-outline-light border-0 fs-4"
                     type="button"
                     id="btn-carrito"
                     data-bs-toggle="modal"
@@ -77,7 +71,7 @@
                     data-bs-toggle="modal"
                     data-bs-target="#miVentana"
                     onclick="abrir('ventanas/cuenta.html')">
-              <i class="bi bi-person-fill"></i>
+                <i class="bi bi-person-fill"></i>
             </button>
 
           </div>
@@ -86,57 +80,154 @@
     </nav>
   </header>
 
+
   <main id="contenido">
 
-    <!-- Carrusel principal -->
     <section class="container my-4">
-      <div id="carruselPrincipal" class="carousel slide">
+        <div id="carruselPrincipal" class="carousel slide">
 
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="0" class="active"></button>
           <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="2"></button>
         </div>
 
         <div class="carousel-inner rounded-4">
           <div class="carousel-item active">
-            <img src="assets/img/img1carrusel.png" class="d-block w-100" alt="Promoción 1">
+              <img src="assets/img/img1carrusel.png" class="d-block w-100" alt="Promoción 1">
           </div>
-          <div class="carousel-item">
+            <div class="carousel-item">
             <img src="assets/img/img2carrusel.png" class="d-block w-100" alt="Promoción 2">
           </div>
           <div class="carousel-item">
-            <img src="assets/img/img3carrusel.png" class="d-block w-100" alt="Promoción 3">
+              <img src="assets/img/img3carrusel.png" class="d-block w-100" alt="Promoción 3">
           </div>
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </button>
 
         <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
+            <span class="carousel-control-next-icon"></span>
         </button>
 
       </div>
     </section>
 
+
+    <section id="productos" class="container my-4 d-lg-flex gap-4 align-items-start">
+
     <nav id="categorias">
+        <div class="titulo-filtro">FILTROS</div>
+
+      <!--Aqui vamos a agrear los filtros-->
+
+      <!--Marca-->  
+
+      <select class="btn-filtro" id="filtro-marca">
+          <option value="todos">Marca: todas</option>
+        <option value="asus">ASUS</option>
+          <option value="lenovo">LENOVO</option>
+        <option value="nvidia">NVIDIA</option>
+        <option value="corsair">CORSAIR</option>
+      </select>
+
+      <!--PRECIO-->
+
+      <select class="btn-filtro" id="filtro-precio">
+        <option value="todos">PRECIO: TODOS</option>
+          <option value="bajo">Menos de $5,000</option>
+        <option value="medio">$5,000 - $15,000</option>
+          <option value="alto">Más de $15,000</option>
+      </select>
+
+
+      <!--Oferta-->
+
+      <select class="btn-filtro" id="filtro-oferta">
+          <option value="">TODOS LOS PRODUCTOS</option>
+        <option value="">CON DESCUENTO</option>
+      </select>
+
+        <button type="button" class="btn-filtro">LIMPIAR FILTROS</button>
     </nav>
 
     <!-- Sección de productos -->
-    <section id="productos" class="container my-4">
+    
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+        <div class="col">
+            <div class="card h-100">
+            <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
+              <div class="card-body">
+              <h5 class="card-title">Laptop Gamer</h5>
+                <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
+              <p class="fs-4 fw-bold">$15,999 MXN</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#miVentana" onclick="abrir('ventanas/producto.html')">Ver producto</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+              <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
+            <div class="card-body">
+                <h5 class="card-title">Laptop Gamer</h5>
+              <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
+              <p class="fs-4 fw-bold">$15,999 MXN</p>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#miVentana" onclick="abrir('ventanas/producto.html')">Ver producto</button>
+            </div>
+          </div>
+        </div>
+
 
         <div class="col">
           <div class="card h-100">
             <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
-            <div class="card-body">
+              <div class="card-body">
               <h5 class="card-title">Laptop Gamer</h5>
               <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
+                <p class="fs-4 fw-bold">$15,999 MXN</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#miVentana" onclick="abrir('ventanas/producto.html')">Ver producto</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+            <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
+            <div class="card-body">
+                <h5 class="card-title">Laptop Gamer</h5>
+              <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
+                <p class="fs-4 fw-bold">$15,999 MXN</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#miVentana" onclick="abrir('ventanas/producto.html')">Ver producto</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card h-100">
+              <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
+            <div class="card-body">
+              <h5 class="card-title">Laptop Gamer</h5>
+                <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
               <p class="fs-4 fw-bold">$15,999 MXN</p>
-              <button type="button" class="btn btn-danger">Ver producto</button>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#miVentana" onclick="abrir('ventanas/producto.html')">Ver producto</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+            <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
+              <div class="card-body">
+              <h5 class="card-title">Laptop Gamer</h5>
+              <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
+                <p class="fs-4 fw-bold">$15,999 MXN</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#miVentana" onclick="abrir('ventanas/producto.html')">Ver producto</button>
             </div>
           </div>
         </div>
@@ -144,59 +235,23 @@
         <div class="col">
           <div class="card h-100">
             <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
-            <div class="card-body">
-              <h5 class="card-title">Laptop Gamer</h5>
+              <div class="card-body">
+                <h5 class="card-title">Laptop Gamer</h5>
               <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
               <p class="fs-4 fw-bold">$15,999 MXN</p>
-              <button type="button" class="btn btn-danger">Ver producto</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#miVentana" onclick="abrir('ventanas/producto.html')">Ver producto</button>
             </div>
           </div>
         </div>
 
         <div class="col">
-          <div class="card h-100">
+            <div class="card h-100">
             <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
             <div class="card-body">
-              <h5 class="card-title">Laptop Gamer</h5>
+                <h5 class="card-title">Laptop Gamer</h5>
               <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
-              <p class="fs-4 fw-bold">$15,999 MXN</p>
-              <button type="button" class="btn btn-danger">Ver producto</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
-            <div class="card-body">
-              <h5 class="card-title">Laptop Gamer</h5>
-              <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
-              <p class="fs-4 fw-bold">$15,999 MXN</p>
-              <button type="button" class="btn btn-danger">Ver producto</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
-            <div class="card-body">
-              <h5 class="card-title">Laptop Gamer</h5>
-              <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
-              <p class="fs-4 fw-bold">$15,999 MXN</p>
-              <button type="button" class="btn btn-danger">Ver producto</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <img src="assets/img/productos/producto1.png" class="card-img-top" alt="Laptop Gamer">
-            <div class="card-body">
-              <h5 class="card-title">Laptop Gamer</h5>
-              <p class="card-text">16 GB de RAM y SSD de 512 GB.</p>
-              <p class="fs-4 fw-bold">$15,999 MXN</p>
-              <button type="button" class="btn btn-danger">Ver producto</button>
+                <p class="fs-4 fw-bold">$15,999 MXN</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#miVentana" onclick="abrir('ventanas/producto.html')">Ver producto</button>
             </div>
           </div>
         </div>
@@ -210,15 +265,15 @@
     <section id="perifericos">
     </section>
 
-    <!-- Modal de Bootstrap para mostrar las ventanas -->
+
     <div id="ventanas">
-      <div class="modal fade" id="miVentana" tabindex="-1">
+        <div class="modal fade" id="miVentana" tabindex="-1">
         <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content ventana">
+            <div class="modal-content ventana">
             <div class="text-end">
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-            <iframe id="marco" src="" width="100%" height="500"></iframe>
+            <iframe id="marco" src="" width="100%" height="560"></iframe>
           </div>
         </div>
       </div>
@@ -226,16 +281,24 @@
 
   </main>
 
-  <footer class="pie-pagina">
+
+  <footer class="pie-pagina py-4 mt-5">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <a href="index.html">
+          <img src="assets/img/logo.png" alt="ApexDroid" width="160">
+      </a>
+
+      <p class="small mb-0">ApexDroid &copy; 2026 - Todos los derechos reservados</p>
+
+        <div class="d-flex gap-3 fs-4">
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/producto.js"></script>
-  <script src="js/carrito.js"></script>
-  <script src="js/direccion.js"></script>
-  <script src="js/metodo-pago.js"></script>
-  <script src="js/favoritos.js"></script>
-  <script src="js/cuenta.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
