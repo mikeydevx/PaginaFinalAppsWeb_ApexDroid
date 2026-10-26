@@ -1,1 +1,1 @@
-"use strict";
+// metodo de pago
