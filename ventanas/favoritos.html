@@ -2,26 +2,78 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Favoritos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/favoritos.css">
 </head>
 <body class="ventana ventana-favoritos">
 
-  <header class="ventana-encabezado">
-    <h2 id="titulo-favoritos">Favoritos</h2>
-  </header>
+  <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
 
-  <div id="contenido-favoritos" class="ventana-contenido">
+      <div class="col">
+          <div class="card h-100 tarjeta-favorito">
+          <div class="text-end p-2">
+              <i class="bi bi-heart-fill icono-corazon"></i>
+          </div>
+          <img src="../assets/img/productos/producto1.png" class="card-img-top img-favorito" alt="NVIDIA GeForce RTX 4070 Super">
+            <div class="card-body text-center">
+            <h6 class="fw-bold">NVIDIA GeForce RTX 4070 Super</h6>
+              <p class="texto-detalle">12GB GDDR6X - DLSS 3 - Ray Tracing</p>
+            <h4 class="precio-favorito fw-bold">$12,999.00</h4>
+              <button type="button" class="btn-ver w-100 mb-2" onclick="window.location.href='producto.html'">VER PRODUCTO</button>
+            <button type="button" class="btn-carrito-fav w-100" onclick="window.location.href='carrito.html'">
+                <i class="bi bi-cart3 me-1"></i> AGREGAR AL CARRITO
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 tarjeta-favorito">
+            <div class="text-end p-2">
+            <i class="bi bi-heart-fill icono-corazon"></i>
+          </div>
+            <img src="../assets/img/productos/producto1.png" class="card-img-top img-favorito" alt="AMD Ryzen 7 7800X3D">
+          <div class="card-body text-center">
+              <h6 class="fw-bold">AMD Ryzen 7 7800X3D</h6>
+            <p class="texto-detalle">8 Núcleos - 16 Hilos - 5.9 GHz</p>
+            <h4 class="precio-favorito fw-bold">$8,488.00</h4>
+              <button type="button" class="btn-ver w-100 mb-2" onclick="window.location.href='producto.html'">VER PRODUCTO</button>
+            <button type="button" class="btn-carrito-fav w-100" onclick="window.location.href='carrito.html'">
+              <i class="bi bi-cart3 me-1"></i> AGREGAR AL CARRITO
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+          <div class="card h-100 tarjeta-favorito">
+          <div class="text-end p-2">
+              <i class="bi bi-heart-fill icono-corazon"></i>
+          </div>
+          <img src="../assets/img/productos/producto1.png" class="card-img-top img-favorito" alt="Corsair Vengeance RGB 32GB">
+            <div class="card-body text-center">
+            <h6 class="fw-bold">Corsair Vengeance RGB 32GB</h6>
+              <p class="texto-detalle">2 X 16GB - DDR5 - 6000MHz</p>
+            <h4 class="precio-favorito fw-bold">$8,999.00</h4>
+              <button type="button" class="btn-ver w-100 mb-2" onclick="window.location.href='producto.html'">VER PRODUCTO</button>
+            <button type="button" class="btn-carrito-fav w-100" onclick="window.location.href='carrito.html'">
+                <i class="bi bi-cart3 me-1"></i> AGREGAR AL CARRITO
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <footer class="ventana-pie">
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/favoritos.js"></script>
+    <script src="../js/favoritos.js"></script>
 </body>
 </html>
