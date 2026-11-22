@@ -18,28 +18,28 @@
         <div class="camara"><i class="bi bi-camera"></i></div>
       </div>
 
-      <div class="usuario-nombre">Usuario</div>
-      <div class="usuario-email">correo123@gmail.com</div>
+      <div class="usuario-nombre" id="nombre-usuario">Usuario</div>
+      <div class="usuario-email" id="correo-usuario">correo123@gmail.com</div>
 
       <div class="seccion-titulo">Información personal</div>
 
       <form style="width: 100%; display: flex; flex-direction: column; align-items: center;">
         <div class="formulario-grupo">
           <label>Nombre</label>
-          <input type="text" value="Usuario">
+          <input type="text" id="campo-nombre" value="Usuario">
         </div>
 
         <div class="formulario-grupo">
           <label>Correo Electrónico</label>
-          <input type="email" value="correo123@gmail.com">
+          <input type="email" id="campo-correo" value="correo123@gmail.com">
         </div>
 
         <div class="formulario-grupo">
           <label>Teléfono</label>
-          <input type="text" value="+XXX XXX XXXX">
+          <input type="text" id="campo-telefono" placeholder="Tu teléfono">
         </div>
 
-        <button type="button" class="btn-guardar">Guardar cambios</button>
+        <button type="button" id="btn-guardar" class="btn-guardar">Guardar cambios</button>
       </form>
     </div>
 
@@ -92,7 +92,7 @@
         <span class="flecha"><i class="bi bi-chevron-right"></i></span>
       </div>
 
-      <div class="card-opcion" onclick="window.top.location.href='../inicio-sesion.html'">
+      <div class="card-opcion" onclick="cerrarSesion()">
         <div class="opcion-izquierda">
           <span class="icono"><i class="bi bi-box-arrow-left"></i></span>
           <div class="option-info">
@@ -109,6 +109,8 @@
   <footer class="ventana-pie" style="text-align: center; margin-top: 10px; font-size: 12px; color: #666;">
     <p>Desarrollado por: Joanna Berenice Duran Zuñiga</p>
   </footer>
+
+  <script src="../js/cuenta.js"></script>
 </body>
 
 </html>
