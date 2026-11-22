@@ -9,6 +9,22 @@ const cuenta = cuentas.find(c => c.email === sesion.email);
 
 const formulario = document.getElementById("form-direccion");
 
+// Si la cuenta tiene una dirección guardada, la muestra en los campos
+if (cuenta && cuenta.direccionEntrega) {
+    const direccion = cuenta.direccionEntrega;
+
+    document.getElementById("nombre").value = direccion.nombre || "";
+    document.getElementById("telefono").value = direccion.telefono || "";
+    document.getElementById("calle").value = direccion.calle || "";
+    document.getElementById("numero").value = direccion.numero || "";
+    document.getElementById("interior").value = direccion.interior || "";
+    document.getElementById("colonia").value = direccion.colonia || "";
+    document.getElementById("codigo-postal").value = direccion.codigoPostal || "";
+    document.getElementById("ciudad").value = direccion.ciudad || "";
+    document.getElementById("estado").value = direccion.estado || "";
+    document.getElementById("referencias").value = direccion.referencias || "";
+}
+
 formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
 
