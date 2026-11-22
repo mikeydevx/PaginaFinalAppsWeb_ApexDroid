@@ -1,124 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dirección</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/direccion.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirección</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/direccion.css">
 </head>
+
 <body class="ventana ventana-direccion">
 
-  <header class="ventana-encabezado">
-    <h2 id="titulo-direccion">Dirección</h2>
-  </header>
-
- 
-<div id="contenido-direccion" class="ventana-contenido">
-
-    <h4>Datos de entrega</h4>
-    <p>Ingresa la dirección donde recibirás tu pedido.</p>
-
-    <form id="form-direccion" class="row g-3">
-
-        <div class="col-md-6">
-            <label for="nombre" class="form-label">
-                Nombre completo
-            </label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-        </div>
-
-        <div class="col-md-6">
-            <label for="telefono" class="form-label">
-                Teléfono
-            </label>
-            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="10 dígitos" required>
-        </div>
-
-        <div class="col-md-8">
-            <label for="calle" class="form-label">
-                Calle
-            </label>
-            <input type="text" class="form-control" id="calle" name="calle" required>
-        </div>
-
-        <div class="col-md-2 col-6">
-            <label for="numero" class="form-label">
-                Núm. exterior
-            </label>
-            <input type="text" class="form-control" id="numero" name="numero" required>
-        </div>
-
-        <div class="col-md-2 col-6">
-            <label for="interior" class="form-label">
-                Núm. interior
-            </label>
-            <input type="text" class="form-control" id="interior" name="interior">
-        </div>
-
-        <div class="col-md-6">
-            <label for="colonia" class="form-label">
-                Colonia
-            </label>
-            <input type="text" class="form-control" id="colonia" name="colonia" required>
-        </div>
-
-        <div class="col-md-6">
-            <label for="codigo-postal" class="form-label">
-                Código postal
-            </label>
-            <input type="text" class="form-control" id="codigo-postal" name="codigo-postal" required>
-        </div>
-
-        <div class="col-md-6">
-            <label for="ciudad" class="form-label">
-                Ciudad
-            </label>
-            <input type="text" class="form-control" id="ciudad" name="ciudad" required>
-        </div>
-
-        <div class="col-md-6">
-            <label for="estado" class="form-label">
-                Estado
-            </label>
-            <input type="text" class="form-control" id="estado" name="estado" required>
-        </div>
-
-        <div class="col-12">
-            <label for="referencias" class="form-label">
-                Referencias adicionales
-            </label>
-            <textarea class="form-control" id="referencias" name="referencias" rows="3" placeholder="Color de la casa, referencias, etc."></textarea>
-        </div>
-
-    </form>
-
-</div>
+    <header class="ventana-encabezado">
+        <h2 id="titulo-direccion">Dirección</h2>
+    </header>
 
 
-  
-<footer class="ventana-pie">
+    <div id="contenido-direccion" class="ventana-contenido">
 
-    <div class="d-flex justify-content-between flex-wrap gap-2 mt-4">
+        <h4>Datos de entrega</h4>
+        <p>Ingresa la dirección donde recibirás tu pedido.</p>
 
-        <a href="carrito.html" class="btn btn-outline-secondary">
-            Volver al carrito
-        </a>
+        <form id="form-direccion" class="row g-3">
 
-        <a href="metodo-pago.html" class="btn btn-danger">
-            Continuar al pago
-        </a>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">
+                    Nombre completo
+                </label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="telefono" class="form-label">
+                    Teléfono
+                </label>
+                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="10 dígitos" required>
+            </div>
+
+            <div class="col-md-8">
+                <label for="calle" class="form-label">
+                    Calle
+                </label>
+                <input type="text" class="form-control" id="calle" name="calle" required>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <label for="numero" class="form-label">
+                    Núm. exterior
+                </label>
+                <input type="text" class="form-control" id="numero" name="numero" required>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <label for="interior" class="form-label">
+                    Núm. interior
+                </label>
+                <input type="text" class="form-control" id="interior" name="interior">
+            </div>
+
+            <div class="col-md-6">
+                <label for="colonia" class="form-label">
+                    Colonia
+                </label>
+                <input type="text" class="form-control" id="colonia" name="colonia" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="codigo-postal" class="form-label">
+                    Código postal
+                </label>
+                <input type="text" class="form-control" id="codigo-postal" name="codigo-postal" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="ciudad" class="form-label">
+                    Ciudad
+                </label>
+                <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="estado" class="form-label">
+                    Estado
+                </label>
+                <input type="text" class="form-control" id="estado" name="estado" required>
+            </div>
+
+            <div class="col-12">
+                <label for="referencias" class="form-label">
+                    Referencias adicionales
+                </label>
+                <textarea class="form-control" id="referencias" name="referencias" rows="3"
+                    placeholder="Color de la casa, referencias, etc."></textarea>
+            </div>
+
+            <div class="col-12 d-flex justify-content-end">
+                <button type="submit" class="btn btn-danger btn-guardar-direccion">
+                    <i class="bi bi-check2-circle me-2"></i>Guardar dirección
+                </button>
+            </div>
+
+        </form>
 
     </div>
 
-    <p class="small text-center text-secondary mt-3 mb-0">Desarrollado por: Jose David Hernandez Aranzales</p>
-
-</footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/direccion.js"></script>
+    <footer class="ventana-pie">
+
+        <div class="d-flex justify-content-between flex-wrap gap-2 mt-4">
+
+            <a href="carrito.html" class="btn btn-outline-secondary">
+                Volver al carrito
+            </a>
+
+            <a href="metodo-pago.html" class="btn btn-danger">
+                Continuar al pago
+            </a>
+
+        </div>
+
+        <p class="small text-center text-secondary mt-3 mb-0">Desarrollado por: Jose David Hernandez Aranzales</p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/direccion.js"></script>
 </body>
+
 </html>

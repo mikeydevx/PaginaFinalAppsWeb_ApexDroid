@@ -1,65 +1,82 @@
-
 .ventana-direccion {
     padding: 20px;
-    background-color: var(--color-blanco);
-    color: var(--color-texto-oscuro);
+    background: #f4f6fa;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .ventana-direccion .ventana-encabezado {
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ccc;
+    margin: -20px -20px 18px;
+    padding: 16px 20px;
+    color: #fff;
+    background: #0c1829;
+    border-bottom: 3px solid #b30000;
+}
+
+.ventana-direccion .ventana-encabezado h2 {
+    margin: 0;
+    font-size: 1.3rem;
 }
 
 .ventana-direccion .ventana-contenido {
-    padding: 15px;
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #e2e7ef;
+    border-radius: 12px;
 }
 
-.ventana-direccion h4 {
-    margin-bottom: 10px;
+.ventana-direccion .ventana-contenido h4 {
+    color: #0c1829;
+    font-weight: 700;
+}
+
+.ventana-direccion .ventana-contenido > p {
+    color: #666;
 }
 
 .ventana-direccion .form-label {
-    font-weight: 500;
+    color: #263449;
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 .ventana-direccion .form-control {
-    border: 1px solid #ccc;
+    border: 1px solid #cbd2dc;
     border-radius: 8px;
-    padding: 10px;
+    padding: 9px 11px;
 }
 
 .ventana-direccion .form-control:focus {
-    border-color: var(--color-rojo);
-    box-shadow: 0 0 0 3px rgba(179, 0, 0, 0.15);
-}
-
-.ventana-direccion .ventana-pie {
-    padding: 15px;
-    border-top: 1px solid #ddd;
+    border-color: #b30000;
+    box-shadow: 0 0 0 3px rgba(179, 0, 0, .12);
 }
 
 .ventana-direccion .btn-danger {
-    background-color: var(--color-rojo);
-    border-color: var(--color-rojo);
-    padding: 10px 20px;
+    background: #b30000;
+    border-color: #b30000;
     border-radius: 8px;
 }
 
 .ventana-direccion .btn-danger:hover {
-    background-color: var(--color-rojo-hover);
+    background: #8a0000;
+    border-color: #8a0000;
 }
 
-@media (max-width: 480px) {
+.ventana-direccion .ventana-pie {
+    padding-top: 14px;
+}
+
+@media (max-width: 575px) {
     .ventana-direccion {
-        padding: 10px;
+        padding: 12px;
+    }
+
+    .ventana-direccion .ventana-encabezado {
+        margin: -12px -12px 14px;
+        padding: 14px;
     }
 
     .ventana-direccion .ventana-contenido {
-        padding: 5px;
-    }
-
-    .ventana-direccion .ventana-pie {
-        padding: 10px 5px;
+        padding: 14px;
     }
 }
