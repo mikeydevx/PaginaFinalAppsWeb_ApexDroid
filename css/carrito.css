@@ -12,11 +12,27 @@
     padding: 15px;
 }
 
-.ventana-carrito .lista.productos p{
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    min-height: 120px;
+/* Cada producto tiene su propia tarjeta. */
+.ventana-carrito .producto-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 18px;
+    margin: 12px 0;
+    text-align: left;
+    background: white;
+    color: #252525;
+    border: 1px solid #dedede;
+    border-left: 4px solid #ba1825;
+    border-radius: 10px;
+}
+
+.ventana-carrito .producto-carrito strong {
+    margin-left: auto;
+    color: #a41623;
+    font-size: 1.15rem;
+    white-space: nowrap;
 }
 
 .ventana-carrito #lista-productos{
@@ -40,3 +56,9 @@
     border-radius: 8px;
 }
 
+
+.producto-carrito img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}

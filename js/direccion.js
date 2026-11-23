@@ -11,6 +11,8 @@ const formulario = document.getElementById("form-direccion");
 
 // Si la cuenta tiene una dirección guardada, la muestra en los campos
 if (cuenta && cuenta.direccionEntrega) {
+    //si la cuenta ya tiene direccion guardada mostramos el boton de pago
+    document.getElementById("btnContinuarPago").classList.remove("d-none");
     const direccion = cuenta.direccionEntrega;
 
     document.getElementById("nombre").value = direccion.nombre || "";
@@ -46,6 +48,9 @@ formulario.addEventListener("submit", function (evento) {
     };
 
     localStorage.setItem("cuentas", JSON.stringify(cuentas));
+
+    //al guardar la direccion por primera vez mostramos el boton de pago
+    document.getElementById("btnContinuarPago").classList.remove("d-none");
 
     alert("Dirección de entrega guardada correctamente");
 });

@@ -41,6 +41,22 @@
             </label>
         </div>
 
+        <!-- datos que aparecen cuando el usuario elige tarjeta -->
+        <fieldset id="datos-tarjeta" class="d-none mt-3" disabled>
+        <legend class="h5">Datos de la tarjeta</legend>
+
+        <label for="nombre-tarjeta" class="form-label">Nombre del titular</label>
+        <input type="text" id="nombre-tarjeta" class="form-control mb-3"
+            placeholder="prueba" required>
+
+        <label for="ultimos-cuatro" class="form-label">Número de tarjeta</label>
+        <input type="text" id="ultimos-cuatro" class="form-control mb-3"
+            placeholder="4242424242424242" inputmode="numeric" maxlength="16"
+            pattern="[0-9]{16}" title="Escribe 16 dígitos sin espacios" required>
+        <label for="vencimiento-tarjeta" class="form-label">Mes y año de vencimiento</label>
+        <input type="month" id="vencimiento-tarjeta" class="form-control" required>
+        </fieldset>
+
     </form>
 
     <div class="resumen-pago">
@@ -71,8 +87,8 @@
             Volver a dirección
         </a>
 
-        <button type="button" class="btn btn-danger" id="btn-confirmar-pago">
-            Confirmar pedido
+        <button type="submit" form="form-metodo-pago" class="btn btn-danger" id="btn-confirmar-pago">
+        Confirmar pedido
         </button>
 
     </div>
